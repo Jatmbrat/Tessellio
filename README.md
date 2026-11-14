@@ -38,6 +38,6 @@ Rules are listed by in-game reveal order.
 
 4. A stable tile is the *n*th of its state to appear, in every row/column it occupies, read from top-to-botton/left-to-right. Its value is *n*.
 
-12.Total values of each state, for tiles under the balance, are equal.  Must involve more than one state.
+12. Total values of each state, for tiles under the balance, are equal.  Must involve more than one state.
 
 15. Grid cells containing multiple tiles always count the top a dividing line first.
