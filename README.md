@@ -10,7 +10,7 @@ This project was started to see if it was possible to make a Takuzu/binary puzzl
 ## Rules
 
 
-Rules are listed by in-game reveal order.
+
 
 1. Every row/column has an equal number of tiles in each state.
 
