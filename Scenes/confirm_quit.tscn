@@ -1,0 +1,42 @@
+[gd_scene load_steps=7 format=3 uid="uid://cxwvrh2dgset7"]
+
+[ext_resource type="Texture2D" uid="uid://b61cdmghg7rl2" path="res://Assets/Tilesets/ConfirmQuit.png" id="1_dbrhs"]
+[ext_resource type="Script" uid="uid://ccc5v15adm0fc" path="res://Scripts/confirm_quit.gd" id="1_p3cbm"]
+[ext_resource type="Script" uid="uid://102rqb1e17op" path="res://Scripts/c_back_button.gd" id="3_5ii3a"]
+[ext_resource type="Script" uid="uid://cwlsdf7skfd3p" path="res://Scripts/c_exit_button.gd" id="3_m6nef"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5ii3a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tkjjt"]
+
+[node name="ConfirmQuit" type="Node2D"]
+script = ExtResource("1_p3cbm")
+
+[node name="BG" type="Sprite2D" parent="."]
+texture = ExtResource("1_dbrhs")
+centered = false
+
+[node name="CBackButton" type="Button" parent="BG"]
+self_modulate = Color(4.0048027, 4.0048027, 4.0048027, 1)
+anchors_preset = -1
+anchor_bottom = 0.021000002
+offset_left = 80.0
+offset_top = 80.0
+offset_right = 160.0
+offset_bottom = 151.936
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5ii3a")
+script = ExtResource("3_5ii3a")
+
+[node name="CExitButton" type="Button" parent="BG"]
+self_modulate = Color(4.0059752, 4.0059752, 4.0059752, 1)
+offset_left = 224.0
+offset_top = 80.0
+offset_right = 304.0
+offset_bottom = 160.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_tkjjt")
+script = ExtResource("3_m6nef")
+
+[connection signal="pressed" from="BG/CBackButton" to="BG/CBackButton" method="_on_pressed"]
+[connection signal="pressed" from="BG/CExitButton" to="BG/CExitButton" method="_on_pressed"]

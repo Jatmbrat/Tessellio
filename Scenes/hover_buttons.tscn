@@ -1,0 +1,54 @@
+[gd_scene load_steps=7 format=3 uid="uid://bq4ojbjcds1ko"]
+
+[ext_resource type="Texture2D" uid="uid://d2yr12oslgixe" path="res://Assets/Tilesets/ModeHover.png" id="1_tbel4"]
+[ext_resource type="Script" uid="uid://1k8fyslov1dh" path="res://Scripts/hover_buttons.gd" id="2_jnar6"]
+[ext_resource type="Script" uid="uid://cgook3p1diws3" path="res://Scripts/hover_button.gd" id="3_wxkre"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mwqfu"]
+texture = ExtResource("1_tbel4")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_wxkre"]
+tile_size = Vector2i(40, 40)
+sources/0 = SubResource("TileSetAtlasSource_mwqfu")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mwqfu"]
+
+[node name="HoverButtons" type="TileMapLayer"]
+tile_set = SubResource("TileSet_wxkre")
+script = ExtResource("2_jnar6")
+
+[node name="HoverButton" type="Button" parent="."]
+modulate = Color(5.912981, 5.912981, 5.912981, 1)
+offset_left = 1.0
+offset_top = 1.0
+offset_right = 39.0
+offset_bottom = 39.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mwqfu")
+script = ExtResource("3_wxkre")
+
+[node name="HoverButton2" type="Button" parent="."]
+modulate = Color(5.912981, 5.912981, 5.912981, 1)
+offset_left = 41.0
+offset_top = 1.0
+offset_right = 79.0
+offset_bottom = 39.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mwqfu")
+script = ExtResource("3_wxkre")
+
+[node name="HoverButton3" type="Button" parent="."]
+modulate = Color(5.912981, 5.912981, 5.912981, 1)
+offset_left = 81.0
+offset_top = 1.0
+offset_right = 119.0
+offset_bottom = 39.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_mwqfu")
+script = ExtResource("3_wxkre")
+
+[connection signal="pressed" from="HoverButton" to="HoverButton" method="_on_pressed"]
+[connection signal="pressed" from="HoverButton2" to="HoverButton2" method="_on_pressed"]
+[connection signal="pressed" from="HoverButton3" to="HoverButton3" method="_on_pressed"]

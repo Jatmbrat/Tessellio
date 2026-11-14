@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://dpcs3vtdsg8hr"]
+
+[ext_resource type="Script" uid="uid://csemt4kp7t0i1" path="res://Scripts/redo_button.gd" id="1_cskjo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_re3g6"]
+
+[node name="RedoButton" type="Button"]
+modulate = Color(8.123444, 8.123444, 8.123444, 1)
+offset_right = 38.0
+offset_bottom = 38.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_re3g6")
+script = ExtResource("1_cskjo")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

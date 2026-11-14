@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8aa3cqohgnxb"]
+
+[ext_resource type="Texture2D" uid="uid://y6iqltdtuniu" path="res://Assets/Tilesets/SinglePixel.png" id="1_8066e"]
+[ext_resource type="Script" uid="uid://cttqwjopdpxun" path="res://Scripts/slope_checker.gd" id="2_nwf60"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nwf60"]
+texture = ExtResource("1_8066e")
+texture_region_size = Vector2i(1, 1)
+0:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_s64do"]
+tile_size = Vector2i(1, 1)
+sources/0 = SubResource("TileSetAtlasSource_nwf60")
+
+[node name="SlopeChecker" type="TileMapLayer"]
+tile_set = SubResource("TileSet_s64do")
+script = ExtResource("2_nwf60")

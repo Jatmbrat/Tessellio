@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=3 uid="uid://bbxd7d8ld4k8b"]
+
+[ext_resource type="Script" uid="uid://c1pf1ojjgtq8c" path="res://Scripts/options_menu.gd" id="1_l1wg4"]
+[ext_resource type="Texture2D" uid="uid://b0t36voiq34" path="res://Assets/Tilesets/OptionsPage.png" id="1_plplt"]
+[ext_resource type="Script" uid="uid://c5j0k5qv4te3g" path="res://Scripts/display_button.gd" id="2_uj0ok"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_plplt"]
+
+[node name="OptionsMenu" type="Node2D"]
+script = ExtResource("1_l1wg4")
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+texture = ExtResource("1_plplt")
+centered = false
+
+[node name="Volume" type="Node2D" parent="Backdrop"]
+
+[node name="Music" type="Node2D" parent="Backdrop"]
+
+[node name="Sound" type="Node2D" parent="Backdrop"]
+
+[node name="Display" type="Node2D" parent="Backdrop"]
+
+[node name="DisplayButton" type="Button" parent="Backdrop/Display"]
+modulate = Color(6.881264, 6.399713, 5.9157524, 1)
+offset_left = 26.0
+offset_top = 278.0
+offset_right = 106.0
+offset_bottom = 358.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_plplt")
+script = ExtResource("2_uj0ok")
+
+[node name="DisplayButton2" type="Button" parent="Backdrop/Display"]
+modulate = Color(6.881264, 6.399713, 5.9157524, 1)
+offset_left = 110.0
+offset_top = 278.0
+offset_right = 190.0
+offset_bottom = 358.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_plplt")
+script = ExtResource("2_uj0ok")
+
+[node name="DisplayButton3" type="Button" parent="Backdrop/Display"]
+modulate = Color(6.881264, 6.399713, 5.9157524, 1)
+offset_left = 194.0
+offset_top = 278.0
+offset_right = 274.0
+offset_bottom = 358.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_plplt")
+script = ExtResource("2_uj0ok")
+
+[node name="DisplayButton4" type="Button" parent="Backdrop/Display"]
+modulate = Color(6.881264, 6.399713, 5.9157524, 1)
+offset_left = 278.0
+offset_top = 278.0
+offset_right = 358.0
+offset_bottom = 358.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_plplt")
+script = ExtResource("2_uj0ok")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 26.0
+offset_top = 26.0
+offset_right = 358.0
+offset_bottom = 278.0
+color = Color(0.0034775548, 0.011721935, 0.036093224, 0.67058825)
+
+[connection signal="pressed" from="Backdrop/Display/DisplayButton" to="Backdrop/Display/DisplayButton" method="_on_pressed"]
+[connection signal="pressed" from="Backdrop/Display/DisplayButton2" to="Backdrop/Display/DisplayButton2" method="_on_pressed"]
+[connection signal="pressed" from="Backdrop/Display/DisplayButton3" to="Backdrop/Display/DisplayButton3" method="_on_pressed"]
+[connection signal="pressed" from="Backdrop/Display/DisplayButton4" to="Backdrop/Display/DisplayButton4" method="_on_pressed"]

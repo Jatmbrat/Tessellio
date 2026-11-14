@@ -1,0 +1,165 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxccaxl8hnlyh"]
+
+[ext_resource type="Texture2D" uid="uid://c1mxbj6ybyfly" path="res://Assets/Tilesets/LevelScreen.png" id="1_vomsr"]
+[ext_resource type="PackedScene" uid="uid://bl2k1l4rog07a" path="res://Scenes/level_select_button.tscn" id="2_826gi"]
+[ext_resource type="PackedScene" uid="uid://dnk02dvys7fob" path="res://Scenes/level_set.tscn" id="3_yu0ff"]
+
+[node name="LevelSelectDefault" type="Node2D"]
+
+[node name="Backdrop" type="Sprite2D" parent="."]
+position = Vector2(-32, -32)
+texture = ExtResource("1_vomsr")
+centered = false
+
+[node name="LevelSelectButton" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 12.0
+offset_top = 12.0
+offset_right = 76.0
+offset_bottom = 76.0
+
+[node name="LevelSelectButton2" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 86.0
+offset_top = 12.0
+offset_right = 150.0
+offset_bottom = 76.0
+
+[node name="LevelSelectButton3" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 160.0
+offset_top = 12.0
+offset_right = 224.0
+offset_bottom = 76.0
+
+[node name="LevelSelectButton4" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 234.0
+offset_top = 12.0
+offset_right = 298.0
+offset_bottom = 76.0
+
+[node name="LevelSelectButton5" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 308.0
+offset_top = 12.0
+offset_right = 372.0
+offset_bottom = 76.0
+
+[node name="LevelSelectButton6" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 12.0
+offset_top = 86.0
+offset_right = 76.0
+offset_bottom = 150.0
+
+[node name="LevelSelectButton7" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 86.0
+offset_top = 86.0
+offset_right = 150.0
+offset_bottom = 150.0
+
+[node name="LevelSelectButton8" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 160.0
+offset_top = 86.0
+offset_right = 224.0
+offset_bottom = 150.0
+
+[node name="LevelSelectButton9" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 234.0
+offset_top = 86.0
+offset_right = 298.0
+offset_bottom = 150.0
+
+[node name="LevelSelectButton10" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 308.0
+offset_top = 86.0
+offset_right = 372.0
+offset_bottom = 150.0
+
+[node name="LevelSelectButton11" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 12.0
+offset_top = 160.0
+offset_right = 76.0
+offset_bottom = 224.0
+
+[node name="LevelSelectButton12" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 86.0
+offset_top = 160.0
+offset_right = 150.0
+offset_bottom = 224.0
+
+[node name="LevelSelectButton13" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 160.0
+offset_top = 160.0
+offset_right = 224.0
+offset_bottom = 224.0
+
+[node name="LevelSelectButton14" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 234.0
+offset_top = 160.0
+offset_right = 298.0
+offset_bottom = 224.0
+
+[node name="LevelSelectButton15" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 308.0
+offset_top = 160.0
+offset_right = 372.0
+offset_bottom = 224.0
+
+[node name="LevelSelectButton16" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 12.0
+offset_top = 234.0
+offset_right = 76.0
+offset_bottom = 298.0
+
+[node name="LevelSelectButton17" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 86.0
+offset_top = 234.0
+offset_right = 150.0
+offset_bottom = 298.0
+
+[node name="LevelSelectButton18" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 160.0
+offset_top = 234.0
+offset_right = 224.0
+offset_bottom = 298.0
+
+[node name="LevelSelectButton19" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 234.0
+offset_top = 234.0
+offset_right = 298.0
+offset_bottom = 298.0
+
+[node name="LevelSelectButton20" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 308.0
+offset_top = 234.0
+offset_right = 372.0
+offset_bottom = 298.0
+
+[node name="LevelSelectButton21" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 12.0
+offset_top = 308.0
+offset_right = 76.0
+offset_bottom = 372.0
+
+[node name="LevelSelectButton22" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 86.0
+offset_top = 308.0
+offset_right = 150.0
+offset_bottom = 372.0
+
+[node name="LevelSelectButton23" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 160.0
+offset_top = 308.0
+offset_right = 224.0
+offset_bottom = 372.0
+
+[node name="LevelSelectButton24" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 234.0
+offset_top = 308.0
+offset_right = 298.0
+offset_bottom = 372.0
+
+[node name="LevelSelectButton25" parent="Backdrop" instance=ExtResource("2_826gi")]
+offset_left = 308.0
+offset_top = 308.0
+offset_right = 372.0
+offset_bottom = 372.0
+
+[node name="LevelSet" parent="." instance=ExtResource("3_yu0ff")]
+position = Vector2(-25, -25)

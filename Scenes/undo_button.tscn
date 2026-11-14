@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://capy7d0kvf46i"]
+
+[ext_resource type="Script" uid="uid://2g6bqdgfumbs" path="res://Scripts/undo_button.gd" id="1_u5r16"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t4jol"]
+
+[node name="UndoButton" type="Button"]
+modulate = Color(8.123444, 8.123444, 8.123444, 1)
+offset_right = 38.0
+offset_bottom = 38.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_t4jol")
+script = ExtResource("1_u5r16")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

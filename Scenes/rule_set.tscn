@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=3 uid="uid://d2habnbfs7uua"]
+
+[ext_resource type="Texture2D" uid="uid://bljhh0tg4qru7" path="res://Assets/Tilesets/RulePageTiles.png" id="1_g3yrg"]
+[ext_resource type="Script" uid="uid://chi8qpd48qycr" path="res://Scripts/rule_set.gd" id="2_s0tj8"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s0tj8"]
+texture = ExtResource("1_g3yrg")
+texture_region_size = Vector2i(84, 84)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_pk7a3"]
+tile_size = Vector2i(84, 84)
+sources/0 = SubResource("TileSetAtlasSource_s0tj8")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g3yrg"]
+texture = ExtResource("1_g3yrg")
+texture_region_size = Vector2i(84, 84)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_s0tj8"]
+tile_size = Vector2i(84, 84)
+sources/0 = SubResource("TileSetAtlasSource_g3yrg")
+
+[node name="RuleSet" type="TileMapLayer"]
+tile_set = SubResource("TileSet_pk7a3")
+script = ExtResource("2_s0tj8")
+
+[node name="Locked" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_s0tj8")
+
+[node name="New" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_s0tj8")
+
+[connection signal="visibility_changed" from="." to="." method="_on_visibility_changed"]

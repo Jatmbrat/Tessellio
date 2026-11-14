@@ -1,0 +1,219 @@
+[gd_scene load_steps=16 format=3 uid="uid://66w1u8w7rjkj"]
+
+[ext_resource type="Texture2D" uid="uid://c3ht28og0b08w" path="res://Assets/Tilesets/SquaresOneTwo.png" id="1_v5gms"]
+[ext_resource type="Texture2D" uid="uid://30mpj1ejpww" path="res://Assets/Tilesets/SquaresOneTwoAlt.png" id="2_anfks"]
+[ext_resource type="Script" uid="uid://ymtemjyg1fxc" path="res://Scripts/tess_gen.gd" id="2_pq07k"]
+[ext_resource type="Texture2D" uid="uid://b51hy6k5cblm6" path="res://Assets/Tilesets/LevelWin.png" id="3_tl1h1"]
+[ext_resource type="PackedScene" uid="uid://bq4ojbjcds1ko" path="res://Scenes/hover_buttons.tscn" id="4_cv4jv"]
+[ext_resource type="Texture2D" uid="uid://b6gjnpw5rkbrf" path="res://Assets/Tilesets/BGDecal.png" id="4_q2rjs"]
+[ext_resource type="PackedScene" uid="uid://capy7d0kvf46i" path="res://Scenes/undo_button.tscn" id="6_p6xcj"]
+[ext_resource type="PackedScene" uid="uid://dpcs3vtdsg8hr" path="res://Scenes/redo_button.tscn" id="7_jtyai"]
+[ext_resource type="Texture2D" uid="uid://csn8xccgv02hh" path="res://Assets/Tilesets/QuadLine.png" id="8_jtyai"]
+[ext_resource type="PackedScene" uid="uid://bonm87fn0djh" path="res://Scenes/note_button.tscn" id="8_w04ej"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pq07k"]
+texture = ExtResource("1_v5gms")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+0:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f1mkh"]
+texture = ExtResource("2_anfks")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+9:2/0 = 0
+12:2/0 = 0
+0:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_tl1h1"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_pq07k")
+sources/1 = SubResource("TileSetAtlasSource_f1mkh")
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_v5gms"]
+texture = ExtResource("1_v5gms")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+5:0/0 = 0
+6:0/0 = 0
+7:0/0 = 0
+8:0/0 = 0
+9:0/0 = 0
+10:0/0 = 0
+11:0/0 = 0
+12:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+5:1/0 = 0
+6:1/0 = 0
+7:1/0 = 0
+8:1/0 = 0
+9:1/0 = 0
+10:1/0 = 0
+11:1/0 = 0
+12:1/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+5:2/0 = 0
+6:2/0 = 0
+7:2/0 = 0
+8:2/0 = 0
+0:2/0 = 0
+9:2/0 = 0
+10:2/0 = 0
+11:2/0 = 0
+12:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_pq07k"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_v5gms")
+
+[node name="TessGen" type="TileMapLayer"]
+tile_set = SubResource("TileSet_tl1h1")
+script = ExtResource("2_pq07k")
+
+[node name="Background" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_pq07k")
+
+[node name="Decal" type="Sprite2D" parent="."]
+texture = ExtResource("4_q2rjs")
+centered = false
+
+[node name="State" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_pq07k")
+
+[node name="Clue" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_pq07k")
+
+[node name="Extra" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_pq07k")
+
+[node name="Locked" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_pq07k")
+
+[node name="Fringe" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_pq07k")
+
+[node name="Hover" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_pq07k")
+
+[node name="CellHover" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_pq07k")
+
+[node name="Column" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_pq07k")
+
+[node name="Row" type="TileMapLayer" parent="."]
+tile_set = SubResource("TileSet_pq07k")
+
+[node name="QuadGrid" type="Sprite2D" parent="."]
+texture = ExtResource("8_jtyai")
+centered = false
+offset = Vector2(-32, -32)
+
+[node name="WinIcon" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(160, 384)
+texture = ExtResource("3_tl1h1")
+
+[node name="UndoButton" parent="." instance=ExtResource("6_p6xcj")]
+offset_left = 37.0
+offset_top = 365.0
+offset_right = 75.0
+offset_bottom = 403.0
+
+[node name="RedoButton" parent="." instance=ExtResource("7_jtyai")]
+offset_left = 77.0
+offset_top = 365.0
+offset_right = 115.0
+offset_bottom = 403.0
+
+[node name="NoteButton" parent="." instance=ExtResource("8_w04ej")]
+offset_left = -3.0
+offset_top = 365.0
+offset_right = 35.0
+offset_bottom = 403.0
+
+[node name="HoverButtons" parent="." instance=ExtResource("4_cv4jv")]
+position = Vector2(204, 364)

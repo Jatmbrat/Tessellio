@@ -1,0 +1,90 @@
+[gd_scene load_steps=12 format=3 uid="uid://cvbyhro107y38"]
+
+[ext_resource type="Texture2D" uid="uid://dt4c6oa8esao8" path="res://Assets/Tilesets/GameFrame.png" id="1_jjgbg"]
+[ext_resource type="Script" uid="uid://d1d38ml53etp5" path="res://Scripts/input_handler.gd" id="2_8gbba"]
+[ext_resource type="Script" uid="uid://x6eh1t5ha607" path="res://Scripts/scene_handler.gd" id="3_jjvhh"]
+[ext_resource type="PackedScene" uid="uid://dxccaxl8hnlyh" path="res://Scenes/level_select_default.tscn" id="4_jjvhh"]
+[ext_resource type="Script" uid="uid://dmv7u5u65o7oq" path="res://Scripts/reset_button.gd" id="5_kry3j"]
+[ext_resource type="Script" uid="uid://baapgbeq2hsvf" path="res://Scripts/exit_button.gd" id="6_21xkr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jjvhh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kry3j"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_21xkr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6bp64"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_344ge"]
+
+[node name="Main" type="Node"]
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(-32, -96)
+texture = ExtResource("1_jjgbg")
+centered = false
+
+[node name="InputHandler" type="Node" parent="."]
+script = ExtResource("2_8gbba")
+
+[node name="SceneHandler" type="Node" parent="InputHandler"]
+script = ExtResource("3_jjvhh")
+
+[node name="LevelSelectDefault" parent="InputHandler/SceneHandler" instance=ExtResource("4_jjvhh")]
+
+[node name="BackButton" type="Button" parent="InputHandler"]
+modulate = Color(18.892157, 18.892157, 18.892157, 1)
+offset_left = -9.0
+offset_top = -85.0
+offset_right = 33.0
+offset_bottom = -43.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_jjvhh")
+
+[node name="ResetButton" type="Button" parent="InputHandler"]
+modulate = Color(18.892157, 18.892157, 18.892157, 1)
+offset_left = 65.0
+offset_top = -85.0
+offset_right = 107.0
+offset_bottom = -43.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_kry3j")
+script = ExtResource("5_kry3j")
+
+[node name="ExitButton" type="Button" parent="InputHandler"]
+modulate = Color(18.892157, 18.892157, 18.892157, 1)
+offset_left = 287.0
+offset_top = -85.0
+offset_right = 329.0
+offset_bottom = -43.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_21xkr")
+script = ExtResource("6_21xkr")
+
+[node name="RulesButton" type="Button" parent="InputHandler"]
+modulate = Color(18.892157, 18.892157, 18.892157, 1)
+offset_left = 139.0
+offset_top = -85.0
+offset_right = 181.0
+offset_bottom = -43.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_6bp64")
+
+[node name="OptionsButton" type="Button" parent="InputHandler"]
+modulate = Color(18.892, 18.892, 18.892, 1)
+offset_left = 213.0
+offset_top = -85.0
+offset_right = 255.0
+offset_bottom = -43.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_344ge")
+
+[node name="MainCamera" type="Camera2D" parent="."]
+position = Vector2(-32, -96)
+anchor_mode = 0
+
+[connection signal="pressed" from="InputHandler/BackButton" to="InputHandler/SceneHandler" method="_on_back_button_pressed"]
+[connection signal="pressed" from="InputHandler/ResetButton" to="InputHandler/ResetButton" method="_on_pressed"]
+[connection signal="pressed" from="InputHandler/ExitButton" to="InputHandler/ExitButton" method="_on_pressed"]
+[connection signal="pressed" from="InputHandler/RulesButton" to="InputHandler/SceneHandler" method="_on_rules_button_pressed"]
+[connection signal="pressed" from="InputHandler/OptionsButton" to="InputHandler/SceneHandler" method="_on_options_button_pressed"]

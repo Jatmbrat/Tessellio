@@ -1,0 +1,193 @@
+[gd_scene load_steps=5 format=3 uid="uid://s2w2ltf3yewi"]
+
+[ext_resource type="Texture2D" uid="uid://bs1t7xhoq6yia" path="res://Assets/Tilesets/RulesPage.png" id="1_7be40"]
+[ext_resource type="Script" uid="uid://c12qne1ofj3oe" path="res://Scripts/rules_button.gd" id="2_fsc6x"]
+[ext_resource type="PackedScene" uid="uid://d2habnbfs7uua" path="res://Scenes/rule_set.tscn" id="3_bvqxk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7be40"]
+
+[node name="RulesPage" type="Node2D"]
+
+[node name="Thumbnails" type="Sprite2D" parent="."]
+texture = ExtResource("1_7be40")
+centered = false
+
+[node name="RulesButton" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 26.0
+offset_top = 26.0
+offset_right = 106.0
+offset_bottom = 106.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RulesButton2" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 110.0
+offset_top = 26.0
+offset_right = 190.0
+offset_bottom = 106.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RulesButton3" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 194.0
+offset_top = 26.0
+offset_right = 274.0
+offset_bottom = 106.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RulesButton4" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 278.0
+offset_top = 26.0
+offset_right = 358.0
+offset_bottom = 106.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RulesButton5" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 26.0
+offset_top = 110.0
+offset_right = 106.0
+offset_bottom = 190.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RulesButton6" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 110.0
+offset_top = 110.0
+offset_right = 190.0
+offset_bottom = 190.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RulesButton7" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 194.0
+offset_top = 110.0
+offset_right = 274.0
+offset_bottom = 190.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RulesButton8" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 278.0
+offset_top = 110.0
+offset_right = 358.0
+offset_bottom = 190.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RulesButton9" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 26.0
+offset_top = 194.0
+offset_right = 106.0
+offset_bottom = 274.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RulesButton10" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 110.0
+offset_top = 194.0
+offset_right = 190.0
+offset_bottom = 274.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RulesButton11" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 194.0
+offset_top = 194.0
+offset_right = 274.0
+offset_bottom = 274.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RulesButton12" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 278.0
+offset_top = 194.0
+offset_right = 358.0
+offset_bottom = 274.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RulesButton13" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 26.0
+offset_top = 278.0
+offset_right = 106.0
+offset_bottom = 358.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RulesButton14" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 110.0
+offset_top = 278.0
+offset_right = 190.0
+offset_bottom = 358.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RulesButton15" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 194.0
+offset_top = 278.0
+offset_right = 274.0
+offset_bottom = 358.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RulesButton16" type="Button" parent="Thumbnails"]
+modulate = Color(3.3529627, 3.3529627, 3.3529627, 1)
+offset_left = 278.0
+offset_top = 278.0
+offset_right = 358.0
+offset_bottom = 358.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7be40")
+script = ExtResource("2_fsc6x")
+
+[node name="RuleSet" parent="Thumbnails" instance=ExtResource("3_bvqxk")]
+position = Vector2(24, 24)
+
+[connection signal="pressed" from="Thumbnails/RulesButton" to="Thumbnails/RulesButton" method="_on_pressed"]
+[connection signal="pressed" from="Thumbnails/RulesButton2" to="Thumbnails/RulesButton2" method="_on_pressed"]
+[connection signal="pressed" from="Thumbnails/RulesButton3" to="Thumbnails/RulesButton3" method="_on_pressed"]
+[connection signal="pressed" from="Thumbnails/RulesButton4" to="Thumbnails/RulesButton4" method="_on_pressed"]
+[connection signal="pressed" from="Thumbnails/RulesButton5" to="Thumbnails/RulesButton5" method="_on_pressed"]
+[connection signal="pressed" from="Thumbnails/RulesButton6" to="Thumbnails/RulesButton6" method="_on_pressed"]
+[connection signal="pressed" from="Thumbnails/RulesButton7" to="Thumbnails/RulesButton7" method="_on_pressed"]
+[connection signal="pressed" from="Thumbnails/RulesButton8" to="Thumbnails/RulesButton8" method="_on_pressed"]
+[connection signal="pressed" from="Thumbnails/RulesButton9" to="Thumbnails/RulesButton9" method="_on_pressed"]
+[connection signal="pressed" from="Thumbnails/RulesButton10" to="Thumbnails/RulesButton10" method="_on_pressed"]
+[connection signal="pressed" from="Thumbnails/RulesButton11" to="Thumbnails/RulesButton11" method="_on_pressed"]
+[connection signal="pressed" from="Thumbnails/RulesButton12" to="Thumbnails/RulesButton12" method="_on_pressed"]
+[connection signal="pressed" from="Thumbnails/RulesButton13" to="Thumbnails/RulesButton13" method="_on_pressed"]
+[connection signal="pressed" from="Thumbnails/RulesButton14" to="Thumbnails/RulesButton14" method="_on_pressed"]
+[connection signal="pressed" from="Thumbnails/RulesButton15" to="Thumbnails/RulesButton15" method="_on_pressed"]
+[connection signal="pressed" from="Thumbnails/RulesButton16" to="Thumbnails/RulesButton16" method="_on_pressed"]
