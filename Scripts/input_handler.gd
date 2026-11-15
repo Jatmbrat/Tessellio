@@ -13,6 +13,8 @@ func _input(event: InputEvent) -> void:
 			focus.toggle_laser(click_pos, "line")
 		if focus.is_fringe(click_pos) and event.is_action_pressed("clear"):
 			focus.toggle_laser(click_pos, "cell")
+		if event.is_action_pressed("Check"):
+			focus.check_board()
 		if event.is_action_pressed("scroll hovers right"):
 			focus.hover_mode = (focus.hover_mode + 1) % focus.Hover_modes.size()
 			SignalBus.hover_changed.emit(focus.hover_mode)

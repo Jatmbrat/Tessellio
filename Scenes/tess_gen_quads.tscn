@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://bpuma50mctpg8"]
+[gd_scene load_steps=16 format=3 uid="uid://bpuma50mctpg8"]
 
 [ext_resource type="Texture2D" uid="uid://biwctelvcoyci" path="res://Assets/Tilesets/LinkedQuads.png" id="1_3w6ro"]
 [ext_resource type="Script" uid="uid://ccyjmoqe2peeh" path="res://Scripts/tess_gen_quads.gd" id="2_oostb"]
@@ -7,8 +7,10 @@
 [ext_resource type="Texture2D" uid="uid://b51hy6k5cblm6" path="res://Assets/Tilesets/LevelWin.png" id="3_svp28"]
 [ext_resource type="PackedScene" uid="uid://bq4ojbjcds1ko" path="res://Scenes/hover_buttons.tscn" id="4_cbnfr"]
 [ext_resource type="PackedScene" uid="uid://capy7d0kvf46i" path="res://Scenes/undo_button.tscn" id="5_gg77n"]
+[ext_resource type="Texture2D" uid="uid://dpr2scn31sppd" path="res://Assets/Tilesets/CheckWrong.png" id="6_a0ukr"]
 [ext_resource type="PackedScene" uid="uid://dpcs3vtdsg8hr" path="res://Scenes/redo_button.tscn" id="6_d5ler"]
 [ext_resource type="PackedScene" uid="uid://bonm87fn0djh" path="res://Scenes/note_button.tscn" id="7_52drf"]
+[ext_resource type="Texture2D" uid="uid://or04ff3syy8y" path="res://Assets/Tilesets/CheckRight.png" id="7_bbvam"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_oostb"]
 texture = ExtResource("1_3w6ro")
@@ -217,6 +219,20 @@ visible = false
 position = Vector2(160, 384)
 texture = ExtResource("3_svp28")
 
+[node name="Wrong" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(160, 384)
+texture = ExtResource("6_a0ukr")
+
+[node name="Right" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(160, 384)
+texture = ExtResource("7_bbvam")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
 [node name="UndoButton" parent="." instance=ExtResource("5_gg77n")]
 offset_left = 37.0
 offset_top = 365.0
@@ -237,3 +253,5 @@ offset_bottom = 403.0
 
 [node name="HoverButtons" parent="." instance=ExtResource("4_cbnfr")]
 position = Vector2(204, 364)
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

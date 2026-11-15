@@ -39,3 +39,7 @@ func _on_note_button_pressed() -> void:
 
 func _on_clear_button_pressed() -> void:
 	get_parent().get_parent().get_child(-1).clear()
+
+
+func _on_check_button_pressed() -> void:
+	get_parent().get_parent().check_board()

@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://bonm87fn0djh"]
+[gd_scene load_steps=10 format=3 uid="uid://bonm87fn0djh"]
 
 [ext_resource type="Texture2D" uid="uid://dabs54ejhbuo0" path="res://Assets/Tilesets/DrawToggle.png" id="1_6vjyo"]
 [ext_resource type="Script" uid="uid://cjdg50g7yq2k4" path="res://Scripts/note_icons.gd" id="2_w137a"]
 [ext_resource type="Texture2D" uid="uid://bthj5blh33pef" path="res://Assets/Tilesets/ClearIcon.png" id="3_3uqyo"]
+[ext_resource type="Texture2D" uid="uid://b5vhlywoxnafk" path="res://Assets/Tilesets/CheckIcon.png" id="4_b63kn"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i4nlv"]
 
@@ -17,6 +18,8 @@ tile_size = Vector2i(38, 38)
 sources/0 = SubResource("TileSetAtlasSource_w137a")
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3uqyo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b63kn"]
 
 [node name="NoteButton" type="Button"]
 modulate = Color(0.98039216, 0.98039216, 0.98039216, 1)
@@ -44,5 +47,19 @@ icon_alignment = 1
 texture = ExtResource("3_3uqyo")
 centered = false
 
+[node name="CheckButton" type="Button" parent="."]
+self_modulate = Color(4.0048027, 4.0048027, 4.0048027, 1)
+layout_mode = 0
+offset_left = 328.0
+offset_right = 352.0
+offset_bottom = 24.0
+focus_mode = 0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_b63kn")
+
+[node name="CheckIcon" type="Sprite2D" parent="CheckButton"]
+texture = ExtResource("4_b63kn")
+centered = false
+
 [connection signal="pressed" from="." to="NoteIcons" method="_on_note_button_pressed"]
 [connection signal="pressed" from="ClearButton" to="NoteIcons" method="_on_clear_button_pressed"]
+[connection signal="pressed" from="CheckButton" to="NoteIcons" method="_on_check_button_pressed"]

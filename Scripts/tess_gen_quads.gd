@@ -44,7 +44,7 @@ const DATA_TILE := Vector2i(15, 0)
 
 enum Layers {
 	BG, BG_OVER, DECAL, STATE, STATE_OVER, CLUE, CLUE_OVER, EXTRA, EXTRA_OVER, LOCKED, FRINGE, HOVER, HOVER_OVER, 
-	CELL_HOVER, COLUMN, ROW, GRID, WIN
+	CELL_HOVER, COLUMN, ROW, GRID, WIN, WRONG, RIGHT, TIMER
 }
 
 enum Hover_modes {
@@ -414,6 +414,20 @@ func audit_board() -> void:
 		SaveManager.save_game()
 
 
+func check_board() -> void:
+	for i in range(2):
+		if get_child(Layers.WRONG + i).is_visible():
+			return
+	for i in spots.size():
+		if is_off(spots["S" + str(i)]["landmark"]) or is_on(spots["S" + str(i)]["landmark"]):
+			if int(is_on(spots["S" + str(i)]["landmark"])) != int(target_state["T" + str(i)]):
+				get_child(Layers.WRONG).visible = true
+				get_child(Layers.TIMER).start()
+				return
+	get_child(Layers.RIGHT).visible = true
+	get_child(Layers.TIMER).start()
+
+
 func get_current_board(mode : int) -> void:
 	var history_store := []
 	var dict : Dictionary = {}
@@ -630,3 +644,8 @@ func is_off(i : Vector2i) -> bool:
 
 func is_stateless(i : Vector2i) -> bool:
 	return get_child(Layers.STATE).get_cell_source_id(i) == -1
+
+
+func _on_timer_timeout() -> void:
+	for i in range(2):
+		get_child(Layers.WRONG + i).visible = false
