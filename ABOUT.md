@@ -4,13 +4,13 @@
    Jatmbrat
 
 ## Software used:
-   Aseprite
-   Clip Studio Paint
-   Godot
-   LibreOffice
-   Notepad
-   Notepad++
-   Pixel Studio
+   <p>Aseprite<br>
+   Clip Studio Paint<br>
+   Godot<br>
+   LibreOffice<br>
+   Notepad<br>
+   Notepad++<br>
+   Pixel Studio</p>
 
 ## Inspired By / Similar Games
    The Artisan of Glimmith
