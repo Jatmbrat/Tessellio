@@ -19,7 +19,7 @@
 
 7. Values of tiles under the square icon are the square/square root of each other.
 
-11. Tiles under the Renban icon are a set of contiguous values.  Spaces under the Nabner icon are a set of non-contiguous values.  No repeat values.
+11. Tiles under the Renban icon are a set of contiguous values.  Tiles under the Nabner icon are a set of non-contiguous values.  No repeat values.
 
 10. Exactly one tile under the number has the displayed value.
 
