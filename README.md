@@ -7,13 +7,13 @@ This project was started to see if it was possible to make a Takuzu/binary puzzl
 
 The game is mainly played with a mouse, but there are a selection of available shortcut keys:
 
-Z - UNDO
-Y - REDO
-R - RESET LEVEL
-Q - RULES?CONTROLS PAGE
-O - OPTIONS
-G - EXIT
-C - CLEAR NOTES
-K - CHECK PUZZLE
-ESC - BACK OUT
-TAB - TOGGLE DRAW MODE
+<p>Z - UNDO<br>
+Y - REDO<br>
+R - RESET LEVEL<br>
+Q - RULES?CONTROLS PAGE<br>
+O - OPTIONS<br>
+G - EXIT<br>
+C - CLEAR NOTES<br>
+K - CHECK PUZZLE<br>
+ESC - BACK OUT<br>
+TAB - TOGGLE DRAW MODE</p>
