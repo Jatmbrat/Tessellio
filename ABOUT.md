@@ -13,21 +13,21 @@
    Pixel Studio</p>
 
 ## Inspired By / Similar Games
-   The Artisan of Glimmith
-   Binairo
-   Sudoku
-   Tango
-   Unruly
-   Urjo
+   <p>The Artisan of Glimmith<br>
+   Binairo<br>
+   Sudoku<br>
+   Tango<br>
+   Unruly<br>
+   Urjo</p>
 
 ## Special Thanks
-   3Blue1Brown
-   The Coding Train
-   Coding With Russ
-   Cracking The Cryptic
-   Firebelley Games
-   GDQuest
-   MattBatwings
-   NoBS Code
-   Numberphile
-   Zetamath
+   <p>3Blue1Brown<br>
+   The Coding Train<br>
+   Coding With Russ<br>
+   Cracking The Cryptic<br>
+   Firebelley Games<br>
+   GDQuest<br>
+   MattBatwings<br>
+   NoBS Code<br>
+   Numberphile<br>
+   Zetamath</p>
