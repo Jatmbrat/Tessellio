@@ -1,9 +1,9 @@
-*Tessellio*
+#Tessellio#
 
-**By:**
+##By:##
    Jatmbrat
 
-**Software used:**
+##Software used:##
    Aseprite
    Clip Studio Paint
    Godot
@@ -12,7 +12,7 @@
    Notepad++
    Pixel Studio
 
-**Inspired By / Similar Games**
+##Inspired By / Similar Games##
    The Artisan of Glimmith
    Binairo
    Sudoku
@@ -20,7 +20,7 @@
    Unruly
    Urjo
 
-**Special Thanks**
+##Special Thank##
    3Blue1Brown
    The Coding Train
    Coding With Russ
