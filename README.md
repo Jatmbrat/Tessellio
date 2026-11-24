@@ -17,3 +17,31 @@ C - CLEAR NOTES<br>
 K - CHECK PUZZLE<br>
 ESC - BACK OUT<br>
 TAB - TOGGLE DRAW MODE</p>
+
+## Levels
+
+1. Binary
+2. Count
+3. Snake Eyes
+4. Conspiring
+5. Satisfied
+6. Pick Up Sticks
+7. Dot
+8. Tightrope
+9. Equals
+10. Allocation
+11. Odyssey
+12. Highlander
+13. Elevator
+14. Hip
+15. Commonality
+16. Fuzzy
+17. Horatio
+18. Stability
+19. Intersections
+20. Pitch
+21. Distance 
+22. Angular
+23. Congregation 
+24. Outliers
+25. Bye-nary
