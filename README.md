@@ -22,7 +22,7 @@ TAB - TOGGLE DRAW MODE</p>
 
 1. Binary
 2. Count
-3. Snake Eyes
+3. Zero 2 Hero
 4. Conspiring
 5. Satisfied
 6. Pick Up Sticks
