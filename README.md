@@ -20,15 +20,15 @@ TAB - TOGGLE DRAW MODE</p>
 
 ## Levels
 
-1. Binary
-2. Count
-3. Zero 2 Hero
-4. Conspiring
-5. Satisfied
-6. Pick Up Sticks
-7. Dot
-8. Tightrope
-9. Equals
+01. Binary
+02. Count
+03. Zero 2 Hero
+04. Conspiring
+05. Satisfied
+06. Pick Up Sticks
+07. Dot
+08. Tightrope
+09. Equals
 10. Allocation
 11. Odyssey
 12. Highlander
