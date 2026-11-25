@@ -10,7 +10,7 @@ The game is mainly played with a mouse, but there are a selection of available s
 <p>Z - UNDO<br>
 Y - REDO<br>
 R - RESET LEVEL<br>
-Q - RULES?CONTROLS PAGE<br>
+Q - RULES/CONTROLS PAGE<br>
 O - OPTIONS<br>
 G - EXIT<br>
 C - CLEAR NOTES<br>
